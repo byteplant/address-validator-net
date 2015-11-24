@@ -4,15 +4,15 @@ address-validator
 A small library providing a wrapper for api.address-validator.net with unirest
 
 ## Installation
-
+  ```shell
   npm install address-validator
-
+  ```
 ## Usage
-
+  ```js
   var addressValidator = require('address-validator')(apiKey);
   
   var address1 = addressValidator(address); //validates address object
-  Address object like this:
+  //Address object like this:
   {
     StreetAddress : "Mühlenstraße 26",
     City          : "Ocholt",
@@ -23,7 +23,7 @@ A small library providing a wrapper for api.address-validator.net with unirest
   address1.isValid() //string "VALID", "SUSPECT" or "INVALID"
   
   address1.serialized() //object if valid address, else false
-  Output like this:
+  //Output like this:
   {
     street: 'Mühlenstr.',
     streetnumber: '26',
@@ -34,12 +34,15 @@ A small library providing a wrapper for api.address-validator.net with unirest
   }
   
   address1.serializedString() //string if valid address, else false
-  Output like this:
+  //Output like this:
   "Mühlenstr. 26,26655 Westerstede,DE"
+  ```
   
 ## Tests
-
+  
+  ```shell
   npm test
+  ```
 
 ## Contributing
 
