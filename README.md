@@ -1,7 +1,6 @@
 address-validator
 =========
 
-
 A small library providing a wrapper for api.address-validator.net with unirest
 
 ## Installation
