@@ -4,17 +4,14 @@ var hookUrl = "http://api.address-validator.net/api/verify";
 module.exports = function(apikey) {
   if (!isValidAPIKey(apikey)) {
     throw new Error("No valid API Key!");
-  } else {
-    AVapikey = apikey;
   }
   return function(address){
-    console.log(address);
-    this.getAPIKey = function(){
-      return(AVapikey);
-    }
     return {
-      getAPIKey: function(){
-        return(apikey);
+      getAPIKey: function() {
+        return apikey;
+      },
+      getAddress: function() {
+        return address;
       }
     }
   }
