@@ -1,5 +1,5 @@
 {
-  "name": "address-validator",
+  "name": "address-validator-net",
   "version": "1.0.0",
   "description": "A simple wrapper class for the address-validator.net API",
   "main": "app.js",
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/janek26/node-address-validator.git"
+    "url": "git+https://github.com/janek26/node-address-validator-net.git"
   },
   "keywords": [
     "node",
@@ -25,7 +25,7 @@
   "author": "Janek Rahrt",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/janek26/node-address-validator/issues"
+    "url": "https://github.com/janek26/node-address-validator-net/issues"
   },
-  "homepage": "https://github.com/janek26/node-address-validator#readme"
+  "homepage": "https://github.com/janek26/node-address-validator-net#readme"
 }
