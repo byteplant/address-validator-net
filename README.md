@@ -1,15 +1,15 @@
-address-validator
+address-validator-net
 =========
 
 A small library providing a wrapper for api.address-validator.net with unirest
 
 ## Installation
   ```shell
-  npm install address-validator
+  npm install address-validator-net
   ```
 ## Usage
   ```js
-  var addressValidator = require('address-validator')(apiKey);
+  var addressValidator = require('address-validator-net')(apiKey);
 
   var address1 = addressValidator(address, callbackFunction(returnOfCallbackFunction){ //validates address object
     //Address object like this:
