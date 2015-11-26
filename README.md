@@ -11,31 +11,32 @@ A small library providing a wrapper for api.address-validator.net with unirest
   ```js
   var addressValidator = require('address-validator')(apiKey);
 
-  var address1 = addressValidator(address); //validates address object
-  //Address object like this:
-  {
-    StreetAddress : "Mühlenstraße 26",
-    City          : "Ocholt",
-    PostalCode    : "26655",
-    CountryCode   : "de"
-  }
+  var address1 = addressValidator(address, callbackFunction(returnOfCallbackFunction){ //validates address object
+    //Address object like this:
+    {
+      StreetAddress : "Mühlenstraße 26",
+      City          : "Ocholt",
+      PostalCode    : "26655",
+      CountryCode   : "de"
+    }
+  
+    returnOfCallbackFunction.isValid() //string "VALID", "SUSPECT" or "INVALID"
 
-  address1.isValid() //string "VALID", "SUSPECT" or "INVALID"
-
-  address1.serialized() //object if valid address, else false
-  //Output like this:
-  {
-    street: 'Mühlenstr.',
-    streetnumber: '26',
-    postalcode: '26655',
-    city: 'Westerstede,Ocholt',
-    state: 'Lower Saxony',
-    country: 'DE'
-  }
-
-  address1.serializedString() //string if valid address, else false
-  //Output like this:
-  "Mühlenstr. 26,26655 Westerstede,DE"
+    returnOfCallbackFunction.serialized() //object if valid address, else false
+    //Output like this:
+    {
+      street: 'Mühlenstr.',
+      streetnumber: '26',
+      postalcode: '26655',
+      city: 'Westerstede,Ocholt',
+      state: 'Lower Saxony',
+      country: 'DE'
+    }
+  
+    returnOfCallbackFunction.serializedString() //string if valid address, else false
+    //Output like this:
+    "Mühlenstr. 26,26655 Westerstede,DE"
+  });
   ```
 
 ## Tests
