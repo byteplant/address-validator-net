@@ -1,7 +1,7 @@
 address-validator-net
 =========
 
-A small library providing a wrapper for api.address-validator.net with unirest
+A small library providing a wrapper for [api.address-validator.net](http://www.address-validator.net/adressen-pruefen-online-api.html) with unirest
 
 ## Installation
   ```shell
