@@ -1,0 +1,47 @@
+{
+  "name": "address-validator-net",
+  "version": "2.0.0",
+  "description": "A wrapper for the address-validator.net API",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "author": "Janek Rahrt <janek.rahrt@me.com>",
+  "homepage": "https://www.address-validator.net/de/api.html",
+  "keywords": [
+    "validator",
+    "address",
+    "autocomplete",
+    "byteplant"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm test && npm run lint && npm run build",
+    "preversion": "npm run lint",
+    "version": "npm run format && git add -A src",
+    "postversion": "git push -f && git push --tags",
+    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
+    "lint": "tslint -p tsconfig.json",
+    "test": "jest --config jestconfig.json --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/janek26/address-validator-net.git"
+  },
+  "files": [
+    "lib/**/*"
+  ],
+  "devDependencies": {
+    "@types/axios": "^0.14.0",
+    "@types/jest": "^24.0.14",
+    "@types/node": "^12.0.8",
+    "jest": "^24.8.0",
+    "prettier": "^1.18.2",
+    "ts-jest": "^24.0.2",
+    "tslint": "^5.17.0",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^3.5.2"
+  },
+  "dependencies": {
+    "axios": "^0.19.0"
+  }
+}
