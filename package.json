@@ -1,6 +1,6 @@
 {
   "name": "address-validator-net",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "A wrapper for the address-validator.net API",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
