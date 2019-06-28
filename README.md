@@ -1,6 +1,6 @@
 # address-validator-net
 
-A library providing a wrapper for [api.address-validator.net](https://www.address-validator.net/de/api.html)
+A library providing a wrapper for [api.address-validator.net](https://www.address-validator.net/api.html)
 
 ## Installation
 
@@ -80,7 +80,7 @@ const responseObject3 = await validate({
     streetnumber: '26',
   }
 
-  => https://www.address-validator.net/de/api.html
+  => https://www.address-validator.net/api.html
 */
 ```
 

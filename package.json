@@ -1,16 +1,26 @@
 {
   "name": "address-validator-net",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "description": "A wrapper for the address-validator.net API",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "author": "Janek Rahrt <janek.rahrt@me.com>",
-  "homepage": "https://www.address-validator.net/de/api.html",
+  "homepage": "https://www.address-validator.net/api.html",
   "keywords": [
     "validator",
     "address",
     "autocomplete",
-    "byteplant"
+    "validation",
+    "verification",
+    "byteplant",
+    "address-validation",
+    "address-autocomplete",
+    "address-verification",
+    "address-matching",
+    "address-cleaning",
+    "data-validation",
+    "data-cleaning",
+    "data-quality"
   ],
   "license": "MIT",
   "scripts": {
@@ -25,7 +35,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/janek26/address-validator-net.git"
+    "url": "git+https://github.com/byteplant/address-validator-net.git"
   },
   "files": [
     "lib/**/*"
