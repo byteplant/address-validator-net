@@ -10,6 +10,10 @@ npm install address-validator-net
 
 ## Usage
 
+The API supports Address Autocomplete and Address Validation.
+
+1) Address Autocomplete (https://www.address-validator.net/api.html#address-autocomplete-api)
+
 ```js
 import AddressValidator from 'address-validator-net'
 
@@ -33,6 +37,9 @@ const responseObject1 = await autocomplete({ Query: 'Mühlenstraße 26, Ocholt' 
       },
     ],
   }
+
+  => https://www.address-validator.net/api.html#address-autocomplete-api
+
 */
 
 // Now we can retrieve the resultId the user selected:
@@ -56,9 +63,9 @@ const responseObject2 = await retrieve({
   }
 */
 
-// Now we can validate the result we retrieved:
-// !! We can also use the validation decoupled from the autocomplete with classic address forms.
-const responseObject3 = await validate({
+2) Address Validation (https://www.address-validator.net/api.html#address-validation-api)
+
+const responseObject = await validate({
   City: 'Ocholt',
   CountryCode: 'de',
   PostalCode: '26655',
@@ -66,7 +73,7 @@ const responseObject3 = await validate({
 }) // validates the provided address
 
 /*
-  responseObject3 looks like this:
+  responseObject looks like this:
   {
     status: VALID, SUSPECT, INVALID or error: DELAYED, RATE_LIMIT_EXCEEDED, API_KEY_INVALID_OR_DEPLETED
     addressline1: 'Mühlenstr. 26',
@@ -80,7 +87,8 @@ const responseObject3 = await validate({
     streetnumber: '26',
   }
 
-  => https://www.address-validator.net/api.html
+  => https://www.address-validator.net/api.html#address-validation-api
+
 */
 ```
 
