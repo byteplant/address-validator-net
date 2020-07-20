@@ -62,9 +62,10 @@ const responseObject2 = await retrieve({
     streetnumber: '26',
   }
 */
-
+```
 2) Address Validation (https://www.address-validator.net/api.html#address-validation-api)
 
+```js
 const responseObject = await validate({
   City: 'Ocholt',
   CountryCode: 'de',
