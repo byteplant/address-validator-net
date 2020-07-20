@@ -63,12 +63,12 @@ test('Use instance to autocomplete address', async () => {
   expect(response).toMatchObject({
     results: [
       {
-        description: 'Große Mühlenstraße 26, 26655 Westerstede, Niedersachsen',
-        id: 'WVR7sXOZ8BbhnDYygzULO6Efzk-ax359UQ',
+        "description": "Mühlenstraße 26, Westerstede, Germany",
+        "id": "VmtWb45sfH0Wk84xf_s08pjEPMD5",
       },
       {
-        description: 'Mühlenstraße 26, 26655 Westerstede, Niedersachsen',
-        id: 'WFR7sEMtAp2323YTbCGdecjpUk-ax35tEA',
+        "description": "Große Mühlenstraße 26, Westerstede, Germany",
+        "id": "IUdyb8OfZSBNw7xobGVuc3RyYcOfZSAyNiwgV2VzdGVyc3RlZGUsIEdlcm1hbnk",
       },
     ],
     status: 'UNVERIFIED',
